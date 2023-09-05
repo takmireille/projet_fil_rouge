@@ -1,0 +1,8 @@
+FROM node:lts-alpine
+RUN npm install
+COPY . .
+RUN nmp start
+RUN nmp test
+RUN npm run build
+
+
